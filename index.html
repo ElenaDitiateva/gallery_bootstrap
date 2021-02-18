@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Gallery</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>                                                       <!-- это кнопка бургер-меню -->
+            <div class="collapse navbar-collapse" id="mainNav">             <!-- это выпадающее меню на малых экранах -->
+              <div class="navbar-nav ml-auto">                              <!-- ml-auto позиционирование справа -->
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Collections</a>
+                <button class="nav-item btn btn-primary" type="button">Add photo</button>    <!-- классы кнопки берем из документации -->
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col text-center">                               <!-- т.к. кнопки - строчные элементы -->
+                    <button type="button" class="btn btn-outline-primary filter-btn my-2 active">All</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn my-2">Pink</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn my-2">Blue</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn my-2">Yellow</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-columns">
+
+                    <div data-key="yellow" class="card text-white">   <!-- data-key="" для фильтрации элементов -->
+                        <img src="img/Grand_Canyon.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Grand_Canyon.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">   
+                        <img src="img/Lake_Moraine_Canada.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Lake_Moraine_Canada.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">   
+                        <img src="img/Bromo_volcano_Indonesia.jpeg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Bromo_volcano_Indonesia.jpeg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="yellow" class="card text-white">   
+                        <img src="img/Machu_Piсchu_Peru.jpeg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Machu_Piсchu_Peru.jpeg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">   
+                        <img src="img/Dragon_tree.jpeg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Dragon_tree.jpeg" class="btn btn-light download-btn">  
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">   
+                        <img src="img/Antelope_Canyon.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Antelope_Canyon.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="yellow" class="card text-white">   
+                        <img src="img/Fly_Geyser_Nevada.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Fly_Geyser_Nevada.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">   
+                        <img src="img/Waterfall.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Waterfall.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="yellow" class="card text-white">   
+                        <img src="img/Bromo_volcano_Indonesia2.jpeg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Bromo_volcano_Indonesia2.jpeg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">   
+                        <img src="img/Waterfall2.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Waterfall2.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">   
+                        <img src="img/Vinicunca_Mountain_Peru2.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Vinicunca_Mountain_Peru2.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="yellow" class="card text-white">   
+                        <img src="img/Vinicunca_Mountain_Peru.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Vinicunca_Mountain_Peru.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">   
+                        <img src="img/Supervolcano_Yellowstone.jpeg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Supervolcano_Yellowstone.jpeg" class="btn btn-light download-btn">  
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">   
+                        <img src="img/Park_Takinou_Japan.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Park_Takinou_Japan.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="yellow" class="card text-white">   
+                        <img src="img/Trolltunga" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Trolltunga" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">   
+                        <img src="img/Raja_Ampat_Indonesia.jpeg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Raja_Ampat_Indonesia.jpeg" class="btn btn-light download-btn">  
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">   
+                        <img src="img/Rice_Terraces_China.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Rice_Terraces_China.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">   
+                        <img src="img/Deserts_North_America.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/Deserts_North_America.jpg" class="btn btn-light download-btn">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- card-columns -->                
+            </div> <!-- row -->
+        </div>
+        <div id="modal" class="flex-column justify-content-between">    <!-- d-flex зададим в скрипте -->
+            <div class="top-block d-flex justify-content-between">
+                <a href="#" class="btn btn-light download-btn" download target="_blank">    <!-- target="_blank" -->
+                    <i class="fa fa-download"></i>
+                </a>
+                <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="img-wrap align-self-center">    <!-- обертка для изображения с фиксированными размерами -->
+                <img src="#" alt="#" class="image">     <!-- изображения будем получать динамически из каждой карточки --> 
+            </div> 
+            <div class="bottom-block">
+                <div class="author d-inline-block">
+                    <!-- будем получать динамически из каждой карточки --> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.filter-btn').click(function() { 
+                if ($(this).hasClass('.active')) {      //.hasClass('.active') - проверка на активированность кнопки
+                    return;                             //ничего не возвращаем
+                }    
+                $('.filter-btn.active').button('toggle');   //перечисление классов без пробела
+                                                            //.button('toggle') - позволяет снять или добавить активность кнопке
+                                                            //в данном случае - снимаем активность с кнопки с классом .active
+                $(this).button('toggle');       //добавляем активность нажатой кнопке
+                if ($(this).text() === 'All') {
+                    $('.card').show(300);
+                } else {
+                    $('.card').hide().filter('[data-key="'+$(this).text().toLocaleLowerCase()+'"]').show(300)
+                }                                       //.toLocaleLowerCase() применяем, т.к. jQuery чувствителен в регистрам
+                //скрываем все => фильтруем => показываем отфильтрованные
+            });   
+            
+            $('.card').click(function () {
+                $('body').toggleClass('stop-scroll');   //.toggleClass() - переключатель классов, т.е. если есть класс - убираем, если нет - добавляем
+                                                        //в .toggleClass() добавляем класс без точки!
+                let image = $(this).find('.card-img').attr('src');      //.attr() - позволяет получить значение аттрибута
+                let author = $(this).find('.bottom-block').html();      //.html() - получаем весь блок .bottom-block
+                let modal = $('#modal');
+                modal.css('display', 'flex');
+                modal.find('.image').attr('src', image);            //в качестве элемента src указываем переменную image
+                modal.find('.download-btn').attr('href', image);    //в качестве элемента href указываем значение переменной image
+                modal.find('.bottom-block').html(author);
+            });        
+            
+            $('#modal .close').click(function () {
+                $('#modal').css('display', 'none');
+                $('body').toggleClass('stop-scroll');
+            });
+        });                                                 
+    </script>
+</body>
+</html>
