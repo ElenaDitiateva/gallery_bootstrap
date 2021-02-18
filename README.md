@@ -1,1 +1,1 @@
-# gallery_bootstrap
+# gallery on Bootstrap
